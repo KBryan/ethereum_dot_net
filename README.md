@@ -102,7 +102,7 @@ Roadmap
 - Hash functions
 - Helpers for non ethereum types
 
-##
+## Sample Output
 `
 94006729117558243750
 0x2c354b77ca94c43d24c9fb67c34fa1c1dd71646052babe8647199ca9ed43537c

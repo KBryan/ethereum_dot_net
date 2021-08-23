@@ -4,7 +4,7 @@
 **C# .NET wrapper for Ethereum RPC client**
 ## Thanks to NEthereum and other sample .Net implementations
 
-Notes: ssh protocol is partially implemented and db_putString, db_getString, db_putHex, db_getHex have been deprecated
+Notes: Shh protocol is partially implemented and db_putString, db_getString, db_putHex, db_getHex have been deprecated
 
 Supported objects
 --------

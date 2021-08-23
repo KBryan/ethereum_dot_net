@@ -92,7 +92,7 @@ Getting started
 		Url = "http://localhost"
 	};
 	
-	var ethereumService = new EthereumService(connectionOptions);
+	var ethereumService = new Web3Mobile(connectionOptions);
 
 Roadmap
 --------

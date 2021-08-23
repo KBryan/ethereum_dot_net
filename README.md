@@ -19,6 +19,8 @@ Supported objects
 Supported RPC calls
 --------
 
+Some of these got broken. All the most relevant ones "work".
+
 - web3_clientVersion
 - web3_sha3
 - net_version

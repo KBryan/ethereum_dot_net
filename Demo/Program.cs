@@ -13,6 +13,7 @@ using EthereumRpc;
 using EthereumRpc.Ethereum;
 using EthereumRpc.RpcObjects;
 using EthereumRpc.Service;
+
 using HashLib;
 
 
@@ -57,7 +58,7 @@ namespace Demo
                 Url = "http://localhost"
             };
 
-            var ethereumService = new EthereumService(privateConnection);
+            var ethereumService = new Web3Mobile(privateConnection);
 
             var exampleTxHash = "0x79b636e7a28e74b6d1db3be815e2658c759dd3213605ca7916b3a19402d0ba42";
             var exampleBlockHash = "0xca3130089dca52a645b1545a0f04930257dea601b54011aececd616d04fec12f";

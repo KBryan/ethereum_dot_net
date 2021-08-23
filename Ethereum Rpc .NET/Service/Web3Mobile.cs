@@ -11,21 +11,21 @@ using Newtonsoft.Json;
 
 namespace EthereumRpc
 {
-    public class EthereumService
+    public class Web3Mobile
     {
-        public EthereumService(string url, string port)
+        public Web3Mobile(string url, string port)
         {
             RpcConnector.ConnectionOptions = new ConnectionOptions();
             RpcConnector.ConnectionOptions.Url = url;
             RpcConnector.ConnectionOptions.Port = port;
         }
 
-        public EthereumService(ConnectionOptions connectionOptions)
+        public Web3Mobile(ConnectionOptions connectionOptions)
         {
             RpcConnector.ConnectionOptions = connectionOptions;
         }
 
-        public EthereumService()
+        public Web3Mobile()
         {
             if (RpcConnector.ConnectionOptions == null)
             {
@@ -121,7 +121,7 @@ namespace EthereumRpc
         {
             var rpcRequest = new RpcRequest(RpcMethod.eth_syncing);
             var rpcResult = new RpcConnector().MakeRequest(rpcRequest);
-            
+
             if (rpcResult.Result.GetType().FullName != "System.Boolean")
             {
                 var json = JsonConvert.SerializeObject(rpcResult.Result);
@@ -131,7 +131,7 @@ namespace EthereumRpc
                 return syncStatus;
             }
 
-            return new SyncStatus() {IsSyncing = false};
+            return new SyncStatus() { IsSyncing = false };
         }
 
         /// <summary>
@@ -255,7 +255,7 @@ namespace EthereumRpc
         /// <param name="blockTag">Block Param</param>
         /// <param name="blockNumber">integer block number</param>
         /// <returns>the value at this storage position.</returns>
-        public long GetStorageAt(string address,int storagePosition, BlockTag blockTag = BlockTag.Quantity, int blockNumber = -1)
+        public long GetStorageAt(string address, int storagePosition, BlockTag blockTag = BlockTag.Quantity, int blockNumber = -1)
         {
             var rpcRequest = new RpcRequest(RpcMethod.eth_getStorageAt);
             rpcRequest.AddParam(address);
@@ -476,7 +476,7 @@ namespace EthereumRpc
         public string SendTransaction(Transaction transaction)
         {
             var rpcRequest = new RpcRequest(RpcMethod.eth_sendTransaction);
-        
+
             rpcRequest.AddParam(transaction);
 
             var rpcResult = new RpcConnector().MakeRequest(rpcRequest);
@@ -519,7 +519,7 @@ namespace EthereumRpc
             return gas;
         }
 
-        public Block GetBlockByHash(string hash,bool returnFullBlock)
+        public Block GetBlockByHash(string hash, bool returnFullBlock)
         {
             var rpcRequest = new RpcRequest(RpcMethod.eth_getBlockByHash);
             rpcRequest.AddParam(hash);
@@ -544,7 +544,7 @@ namespace EthereumRpc
                 block.TransactionHashes = JsonConvert.DeserializeObject<string>(jsonTransactions);
             }
 
-            
+
             return block;
         }
 
@@ -690,7 +690,7 @@ namespace EthereumRpc
         public string NewFilter(Filter filter)
         {
             var rpcRequest = new RpcRequest(RpcMethod.eth_newFilter);
-            
+
             rpcRequest.AddParam(filter);
             var rpcResult = new RpcConnector().MakeRequest(rpcRequest);
 
@@ -888,7 +888,7 @@ namespace EthereumRpc
             {
                 From = "0x04f96a5e25610293e42a73908e93ccc8c4d4dc0edcfa9fa872f50cb214e08ebf61a03e245533f97284d442460f2998cd41858798ddfd4d661997d3940272b717b1",
                 To = "0x3e245533f97284d442460f2998cd41858798ddf04f96a5e25610293e42a73908e93ccc8c4d4dc0edcfa9fa872f50cb214e08ebf61a0d4d661997d3940272b717b1",
-                Payload =  "0x7b2274797065223a226d6",
+                Payload = "0x7b2274797065223a226d6",
                 Priority = "0x64",
                 Ttl = "0x64",
             };

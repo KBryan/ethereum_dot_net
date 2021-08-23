@@ -64,7 +64,6 @@
     <Compile Include="Ethereum\Work.cs" />
     <Compile Include="RpcObjects\Transaction.cs" />
     <Compile Include="Service\EtherCurrencyConverter.cs" />
-    <Compile Include="Service\EthereumService.cs" />
     <Compile Include="MethodExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Connection\RpcConnector.cs" />
@@ -72,6 +71,7 @@
     <Compile Include="RpcObjects\SyncStatus.cs" />
     <Compile Include="RpcObjects\RpcRequest.cs" />
     <Compile Include="RpcObjects\RpcResultBase.cs" />
+    <Compile Include="Service\Web3Mobile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

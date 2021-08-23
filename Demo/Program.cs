@@ -65,8 +65,8 @@ namespace Demo
             var exampleAddress = "0x63a9975ba31b0b9626b34300f7f627147df1f526";
 
 
-            var privateAddress1 = "0xcab3e4e71d5f5578c62eb7da9014220761952148";
-            var privateAddress2 = "0xa8c98594d716fed32366411457cc0ff803fcd845";
+            var privateAddress1 = "0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590";
+            var privateAddress2 = "0x7b953144Da42fe99d15411ae9e945C877b1B839c";
 
             Console.WriteLine(ethereumService.GetBalance("0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590", BlockTag.Latest));
 

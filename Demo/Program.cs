@@ -72,21 +72,21 @@ namespace Demo
             Console.WriteLine(ethereumService.GetBalance("0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590", BlockTag.Latest));
 
 
-           // var t = new Transaction() {From = privateAddress1, To = privateAddress2, Value = "0x9184e72a" };
-           // Console.WriteLine(ethereumService.SendTransaction(t));
-           // Console.WriteLine(ethereumService.SendTransaction(privateAddress1, privateAddress2, -1, null,-1,350000)); //return nothing
+            var t = new Transaction() {From = privateAddress1, To = privateAddress2, Value = "0x9184e72a" };
+            Console.WriteLine(ethereumService.SendTransaction(t));
+            Console.WriteLine(ethereumService.SendTransaction(privateAddress1, privateAddress2, -1, null,-1,350000)); //return nothing
 
-           // Console.WriteLine(ethereumService.GetWeb3ClientVersion());
-           // Console.WriteLine(ethereumService.GetWeb3Sha3("Hello world"));
-           // Console.WriteLine(ethereumService.GetNetVersion());
-           // Console.WriteLine(ethereumService.GetNetListening());
-           // Console.WriteLine(ethereumService.GetNetPeerCount());
-          //  Console.WriteLine(ethereumService.GetProtocolVersion());
-          //  Console.WriteLine(ethereumService.GetSyncing());
-          //  Console.WriteLine(ethereumService.GetCoinbase().Value);
-          //  Console.WriteLine(ethereumService.GetMining());
-          //  Console.WriteLine(ethereumService.GetHashrate());
-          //  Console.WriteLine(ethereumService.GetGasPrice());
+            Console.WriteLine(ethereumService.GetWeb3ClientVersion());
+            Console.WriteLine(ethereumService.GetWeb3Sha3("Hello world"));
+            Console.WriteLine(ethereumService.GetNetVersion());
+            Console.WriteLine(ethereumService.GetNetListening());
+            //Console.WriteLine(ethereumService.GetNetPeerCount());
+            Console.WriteLine(ethereumService.GetProtocolVersion());
+            Console.WriteLine(ethereumService.GetSyncing());
+            Console.WriteLine(ethereumService.GetCoinbase().Value);
+            Console.WriteLine(ethereumService.GetMining());
+            Console.WriteLine(ethereumService.GetHashrate());
+            Console.WriteLine(ethereumService.GetGasPrice());
             ethereumService.GetAccounts().ToList().ForEach(i => Console.Write(@"[{0}] ", i));
 
             var accounts = ethereumService.GetAccounts();
@@ -101,19 +101,21 @@ namespace Demo
                 Console.WriteLine("sign : " + sign);
             }
 
-            //Console.WriteLine(ethereumService.GetBlockNumber());
-            //Console.WriteLine(ethereumService.GetBalance(exampleAddress, BlockTag.Latest));
-            //Console.WriteLine(ethereumService.GetStorageAt(exampleAddress, 100, BlockTag.Latest));
-            //Console.WriteLine(ethereumService.GetTransactionCount(exampleAddress, BlockTag.Latest));
-            //Console.WriteLine(ethereumService.GetBlockTransactionCountByHash(exampleBlockHash));
-            //Console.WriteLine(ethereumService.GetBlockTransactionCountByNumber(BlockTag.Latest));
-            //Console.WriteLine(ethereumService.GetUncleCountByBlockHash(exampleBlockHash));
-            //Console.WriteLine(ethereumService.GetUncleCountByBlockNumber(10));
-            //Console.WriteLine(ethereumService.GetCode(exampleAddress, BlockTag.Latest));
+            Console.WriteLine(ethereumService.GetBlockNumber());
+            Console.WriteLine(ethereumService.GetBalance(exampleAddress, BlockTag.Latest));
+            Console.WriteLine(ethereumService.GetStorageAt(exampleAddress, 100, BlockTag.Latest));
+            Console.WriteLine(ethereumService.GetTransactionCount(exampleAddress, BlockTag.Latest));
+            Console.WriteLine(ethereumService.GetBlockTransactionCountByHash(exampleBlockHash));
+            Console.WriteLine(ethereumService.GetBlockTransactionCountByNumber(BlockTag.Latest));
+            Console.WriteLine(ethereumService.GetUncleCountByBlockHash(exampleBlockHash));
+            Console.WriteLine(ethereumService.GetUncleCountByBlockNumber(10));
+            Console.WriteLine(ethereumService.GetCode(exampleAddress, BlockTag.Latest));
 
-            //Console.WriteLine(ethereumService.Sign(exampleAddress, "School bus")); // return nothing
-            //Console.WriteLine(ethereumService.SendTransaction("0xb60e8dd61c5d32be8058bb8eb970870f07233155", "0xd46e8dd67c5d32be8058bb8eb970870f072445675", 30400, "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
-            //Console.WriteLine(ethereumService.SendRawTransaction("0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); // returns nothing
+            Console.WriteLine(ethereumService.Sign(exampleAddress, "School bus")); // return nothing
+            Console.WriteLine("Send Transaction");
+            Console.WriteLine(ethereumService.SendTransaction("0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590", "0x7b953144Da42fe99d15411ae9e945C877b1B839c", 30400, "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
+            Console.WriteLine("Send Raw Transaction");
+            Console.WriteLine(ethereumService.SendRawTransaction("0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); // returns nothing
             //Console.WriteLine(ethereumService.Call("0xb60e8dd61c5d32be8058bb8eb970870f07233155", "0xd46e8dd67c5d32be8058bb8eb970870f072445675", 30400, "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
 
             //Console.WriteLine(ethereumService.EstimateGas()); // not yet implemented

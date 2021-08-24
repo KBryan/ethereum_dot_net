@@ -2,7 +2,7 @@
 # Ethereum Rpc .NET
 
 **C# .NET wrapper for Ethereum RPC client**
-## Thanks to NEthereum and other sample .Net implementations
+## Thanks to bunch of Ethereum .Net implementations
 
 Notes: Shh protocol is partially implemented and db_putString, db_getString, db_putHex, db_getHex have been deprecated
 
@@ -18,6 +18,8 @@ Supported objects
 
 Supported RPC calls
 --------
+
+Some of these got broken. All the most relevant ones "work".
 
 - web3_clientVersion
 - web3_sha3
@@ -103,12 +105,11 @@ Roadmap
 - Helpers for non ethereum types
 
 ## Sample Output
-`
-94006729117558243750
+94001213342907706250
 
-0x2c354b77ca94c43d24c9fb67c34fa1c1dd71646052babe8647199ca9ed43537c
+0x0711d5deea6176b28f565cb32516391763a73e2b5ccf6a05f5c1413aea63dc2c
 
-0x058e8f70bca15aa86857cb9d2ee4c02724d157940b3d71af90d1a831d642dbea
+0xd05947160fc65851fded18c7ee0a8936c970d28f23dd832fd04ffc0de1b3c3a4
 
 EthereumJS TestRPC/v2.13.1/ethereum-js
 
@@ -130,10 +131,12 @@ IsSyncing:False
 
 0xb884ff4b46c7d0ccb68d280ef39b3cbe8fd47590
 
+Thread started: <Thread Pool> #10
+
+Thread started: <Thread Pool> #11
+
 True
-
 0
-
 20000000000
 
 [0xb884ff4b46c7d0ccb68d280ef39b3cbe8fd47590] [0x7b953144da42fe99d15411ae9e945c877b1b839c] [0x9ea4c939ba86216cd668720fab229957d47cb98c] [0xf933ece5132655d98cd3e5d64bd442fefc65abe2] [0x602337414982f13c01ed0585472e45e2619e292a] [0x640aef81f42299ad958aac7b4e9f76247071abb1] [0xd6af3e021f835c8d324a31d366e82ecdeaaade42] [0xe8a15d86e739fb60f81ade5fb4fc66b61cf4a0f9] [0x7ac91b385ec863427c4c1202086f75f359c5024b] [0x19f914e69cd70c9407f6e0f4470c536a176ea016] account :94
@@ -146,7 +149,6 @@ account :100
 
 sign : 0xbe2ae071937f6c69af65546d48504cfbb0bcc2868acd9cf540e4e609588efcc97ce0aa561f22705bb7761806671de3ae3d66a210f0cbd1c427803e780212000d01
 account :100
-Thread started: <Thread Pool> #11
 
 sign : 0x283024a0abf1522a474f02394222a4a8831e9fa4ecb1567ad0d9f7ff0abdd10f4e1910df31cd9cdf645ef23f7d3d4576d3bd63e6ddd37326b8b05a09ba846f5d00
 account :100
@@ -165,5 +167,20 @@ account :100
 
 sign : 0x42ab7021eb66a03076608d417df332b3239b34b646ed4bde368e3524c8adaf7162eaa2b38a2177a657372902f19869726503277743533034eb2e824e3583516f00
 account :100
+
 sign : 0xe7f89fad73e077576427548093d7368b742341bfa6f6241604d6e8f96b69df153c0ab6fb6c1c9212bc8ff6fe7bad26f73209f8cf4fc0edd90d740c47d8aa29b401
-`
+72
+0
+0
+0
+0
+1
+0
+0
+0x
+
+Send Transaction
+
+0xdb300510adca45d314f61f32418a1323aafb7f86128948928365e046498cc321
+
+Send Raw Transaction

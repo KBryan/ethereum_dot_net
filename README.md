@@ -1,5 +1,5 @@
 
-# Ethereum Rpc .NET
+# Ethereum .NET
 
 **C# .NET wrapper for Ethereum RPC client**
 

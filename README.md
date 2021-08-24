@@ -2,7 +2,6 @@
 # Ethereum Rpc .NET
 
 **C# .NET wrapper for Ethereum RPC client**
-## Thanks to bunch of Ethereum .Net implementations
 
 Notes: Shh protocol is partially implemented and db_putString, db_getString, db_putHex, db_getHex have been deprecated
 

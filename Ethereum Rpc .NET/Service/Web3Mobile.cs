@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Numerics;
-using EthereumRpc.Ethereum;
-using EthereumRpc.RpcObjects;
+using ChainGame.Ethereum;
+using ChainGame.RpcObjects;
 using Newtonsoft.Json;
 
-namespace EthereumRpc
+namespace ChainGame
 {
     public class Web3Mobile
     {

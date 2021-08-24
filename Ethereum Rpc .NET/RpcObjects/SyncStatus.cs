@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace EthereumRpc.RpcObjects
+namespace ChainGame.RpcObjects
 {
     public class SyncStatus
     {

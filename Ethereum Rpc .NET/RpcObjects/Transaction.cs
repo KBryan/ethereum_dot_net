@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EthereumRpc.Ethereum;
+using ChainGame.Ethereum;
 using Newtonsoft.Json;
 
-namespace EthereumRpc.RpcObjects
+namespace ChainGame.RpcObjects
 {
 
 

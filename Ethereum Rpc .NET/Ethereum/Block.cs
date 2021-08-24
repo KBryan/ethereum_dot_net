@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using EthereumRpc.RpcObjects;
+using ChainGame.RpcObjects;
 using Newtonsoft.Json;
 
-namespace EthereumRpc.Ethereum
+namespace ChainGame.Ethereum
 {
     public class Block
     {

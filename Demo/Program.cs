@@ -9,10 +9,10 @@ using System.Runtime.Remoting.Channels.Ipc;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using EthereumRpc;
-using EthereumRpc.Ethereum;
-using EthereumRpc.RpcObjects;
-using EthereumRpc.Service;
+using ChainGame;
+using ChainGame.Ethereum;
+using ChainGame.RpcObjects;
+using ChainGame.Service;
 
 using HashLib;
 

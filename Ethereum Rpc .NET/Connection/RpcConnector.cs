@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace EthereumRpc
+namespace ChainGame
 {
     public class RpcConnector
     {

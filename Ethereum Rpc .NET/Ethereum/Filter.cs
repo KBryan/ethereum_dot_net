@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace EthereumRpc.Ethereum
+namespace ChainGame.Ethereum
 {
     public class Filter
     {

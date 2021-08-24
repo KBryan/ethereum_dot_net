@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EthereumRpc
+namespace ChainGame
 {
     public class ConnectionOptions
     {

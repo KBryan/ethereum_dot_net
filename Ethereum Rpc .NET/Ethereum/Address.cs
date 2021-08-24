@@ -9,7 +9,6 @@ namespace EthereumRpc
     public class Address
     {
         public string Value { get; set; }
-        private byte[] _bytes;
 
         public Address(string value)
         {

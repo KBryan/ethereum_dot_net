@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Configuration;
-using System.Security.Policy;
-using EthereumRpc.RpcObjects;
 
 namespace EthereumRpc
 {
@@ -50,7 +44,7 @@ namespace EthereumRpc
                     dataStream.Dispose();
                 }
             }
-            catch (WebException exception)
+            catch (WebException)
             {
                 
                 throw new EthereumRpcException(string.Format("Could not connect to ethereum on network address {0}:{1}. Check Ethereum is running and the correct port is specified (8545 for live)", ConnectionOptions.Url, ConnectionOptions.Port));
@@ -82,12 +76,10 @@ namespace EthereumRpc
                 var rpcResult = JsonConvert.DeserializeObject<RpcResult>(json);
                 return rpcResult;
             }
-            catch (WebException webException)
+            catch (WebException)
             {
                 throw new EthereumRpcException(string.Format("Ethereum returned unknown response"));
             }
-
-            return null;
         }
     }
 }

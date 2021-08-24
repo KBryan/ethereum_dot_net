@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Numerics;
 using EthereumRpc.Ethereum;
 using EthereumRpc.RpcObjects;
-using EthereumRpc.RpcObjects.EthereumRpc.RpcObjects;
-using Microsoft.SqlServer.Server;
 using Newtonsoft.Json;
 
 namespace EthereumRpc
@@ -534,10 +531,10 @@ namespace EthereumRpc
             {
                 block.TransactionsFull = JsonConvert.DeserializeObject<List<Transaction>>(jsonTransactions);
 
-                if (block.TransactionsFull.Count > 0)
+               /* if (block.TransactionsFull.Count > 0)
                 {
                     int i = 100;
-                }
+                }*/
             }
             else
             {

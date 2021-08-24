@@ -113,7 +113,7 @@ namespace Demo
 
             Console.WriteLine(ethereumService.Sign(exampleAddress, "School bus")); // return nothing
             Console.WriteLine("Send Transaction");
-            Console.WriteLine(ethereumService.SendTransaction("0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590", "0x7b953144Da42fe99d15411ae9e945C877b1B839c", 30400, "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
+            Console.WriteLine(ethereumService.SendTransaction("0xb884FF4b46C7d0cCb68d280EF39B3cBE8Fd47590", "0x7b953144Da42fe99d15411ae9e945C877b1B839c", 30400,"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
             Console.WriteLine("Send Raw Transaction");
             Console.WriteLine(ethereumService.SendRawTransaction("0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); // returns nothing
             //Console.WriteLine(ethereumService.Call("0xb60e8dd61c5d32be8058bb8eb970870f07233155", "0xd46e8dd67c5d32be8058bb8eb970870f072445675", 30400, "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675")); //return nothing
@@ -122,7 +122,6 @@ namespace Demo
             //Console.WriteLine(ethereumService.GetBlockByHash(exampleBlockHash, true)); // works but need to fix partial value return (fullblock:false)
             //Console.WriteLine(ethereumService.GetBlockByNumber(exampleBlockNumber, BlockTag.Quantity,true));
             //Console.WriteLine(ethereumService.GetTransactionByHash(exampleTxHash));
-
 
             //Console.WriteLine(ethereumService.GetTransactionByBlockHashAndIndex(exampleBlockHash,0));
             //Console.WriteLine(ethereumService.GetTransactionByBlockNumberAndIndex(exampleBlockNumber, 0));
